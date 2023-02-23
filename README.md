@@ -2,8 +2,7 @@
 
 # Helpful reminder- important steps for git workflow
 
-
-          #### Adding a Repository
+ #### Adding a Repository
 
 #Make a folder in Cloud9: mkdir folder_name
 
@@ -40,8 +39,19 @@
 
 #to switch between branches, use command git checkout name_of_branch_you_want_to_switch_to 
 
+#make changes to file/program, then add and commit them
+
 #if you want to delete a branch, use command: git branch -d name_of_branch 
           (hint: you cant be in that branch when trying to delete it)
+          
+          #### Merging
+
+#make sure you are on the right branch (aka: the branch you want to merge into, usually the main branch)
+
+#apply command: git merge name_of_branch_you_want_to_be_merging
+
+#check ls and the file/program for the changes you made. Also check git log
+
           
 
           #### Push to github 
@@ -65,7 +75,10 @@
           commit directly to the main branch, and click on commit changes.
 
 #from cloud 9, command: git fetch, then command: git diff main origin/main
+          (aka: git diff original code, or unchanged branch       followed by the new code, or changed branch)
 
 #then command: git pull --ff-only (#hint-make sure you are in the right branch-usually main)
 
 #then check git log and git status to see the changes
+
+          
