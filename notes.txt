@@ -1,0 +1,34 @@
+notes from the book:
+
+the / divides two numbers, but wont give decimals unless you put 
+  a decimal in the equation ex: if you are dividing two numbers 
+  (15 / 4)(it will give you 3)
+if you want to get the whole answer without a remainder, 
+  use a float. ex: (15.0 / 4)(will give you 3.75)
+  
+the % (modulo) gives the remainder. Ex: (15 % 4)(will give you 3)
+a better example is:
+9357 / 1000 will give you 9, but
+9357 % 1000 wil give you 357
+  
+integers (whole numbers) are represented by i, so i = integer 
+if converting a string to an integer, use .to_i, ex. '45'.to_i 
+
+floats (numbers with decimals) are represented by f, so f = floats
+if converting a string to a float, use .to_f, ex. '45.55'.to_f
+
+  
+.to_s converts integers and floats to strings
+
+a hash is a set of key-value pairs, represented by {}.
+A hash consists of a key, usually represented by a symbol, 
+  that points to a value (denoted using a =>) of any type of data. 
+ex: {:dog => 'barks'}
+aka: {(=hash):(=symbol)dog(=key) =>(=denotation)'barks'(=value)}
+there can be multiples: ex: {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}
+ex: {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}[:dog] 
+  would return "barks"
+  
+An expression is anything that can be evaluated. 
+a ruby expression always returns a value, even if it an error or nil
+
