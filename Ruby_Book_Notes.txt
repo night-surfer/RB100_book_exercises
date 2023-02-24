@@ -1,5 +1,7 @@
 notes from the book:
 
+Chapter 1: The Basics
+
 the / divides two numbers, but wont give decimals unless you put 
   a decimal in the equation ex: if you are dividing two numbers 
   (15 / 4)(it will give you 3)
@@ -31,4 +33,30 @@ ex: {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}[:dog]
   
 An expression is anything that can be evaluated. 
 a ruby expression always returns a value, even if it an error or nil
+
+
+Chapter 2: Variables
+
+When you assign a variable, you use the = symbol. The name of the variable goes 
+on the left and the value you want to store in the variable goes on the right.
+
+there are five types of variables. Constants, global variables, 
+      class variables, instance variables, and local variables. 
+
+
+Remember. The individual = symbol assigns value while 
+  the == symbol checks if two things are equal.
+  
+gets stands for "get string"  Alone, gets will return with \n (carriage return) at the end
+chomp will get rid of the \n. together they are gets.chomp
+
+Blocks
+A block is a piece of code that follows a method's invocation, 
+delimited by either curly braces {} or do/end:
+With blocks, the one rule that we want to emphasize is that: Inner scope can 
+access variables initialized in an outer scope, but not vice versa.
+
+  
+  
+
 
