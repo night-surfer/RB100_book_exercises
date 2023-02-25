@@ -21,6 +21,9 @@ if converting a string to a float, use .to_f, ex. '45.55'.to_f
 
   
 .to_s converts integers and floats to strings
+s usually statds for string
+ex:
+puts is short for put string 
 
 a hash is a set of key-value pairs, represented by {}.
 A hash consists of a key, usually represented by a symbol, 
@@ -50,13 +53,50 @@ Remember. The individual = symbol assigns value while
 gets stands for "get string"  Alone, gets will return with \n (carriage return) at the end
 chomp will get rid of the \n. together they are gets.chomp
 
-Blocks
+Blocks:
 A block is a piece of code that follows a method's invocation, 
-delimited by either curly braces {} or do/end:
-With blocks, the one rule that we want to emphasize is that: Inner scope can 
+delimited by either curly braces {} (used if its one line of code)
+or do/end (used if it is multiple lines of code):
+EX:
+1.upto(4) { |number| puts "Echo#{number}"}
+      or
+1.upto(4) do |number|
+  puts "Echo #{number}" 
+end
+this explained is:
+1.upto(method)(4)(the 4 here is the method parameter) do (starts the block) |number|(block parameter or local variable)
+  puts "Echo #{number}"
+end(finishes the block)
+
+-With blocks, the one rule that we want to emphasize is that: Inner scope can 
 access variables initialized in an outer scope, but not vice versa.
 
-  
-  
+
+Chapter 3: Methods 
+
+use def (short for define) when defining a method. This way you can use it over and over 
+throughout the program. Always finish it with an end.
+ex:
+def say
+  # method body goes here
+end
+-method invocation refers to calling a method.
+-parameters are in () directly following what is difined. 
+ex: 
+def say(words)
+  puts words
+end
+
+say("hello")
+say("hi")
+
+- Parameters are used when you have data outside of a method 
+definition's scope, but you need access to it within the method 
+definition. If the method definition does not need access to any 
+outside data, you do not need to define any parameters.
+
+-Arguments are pieces of information that are sent to a method 
+invocation to be modified or used to return a specific result. 
+We "pass" arguments to a method when we call it. 
 
 
