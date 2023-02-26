@@ -2,6 +2,13 @@ notes from the book:
 
 Chapter 1: The Basics
 
+puts stands for put s (as in string)
+gets stands for get s (as in string)
+
+remember: all user input comes in as a string. So if you are working with numbers
+  be sure to add .to_i (for integers) or .to_f (for floats) to your gets.chomp
+  EX: number = gets.chomp.to_i
+
 the / divides two numbers, but wont give decimals unless you put 
   a decimal in the equation ex: if you are dividing two numbers 
   (15 / 4)(it will give you 3)
@@ -99,4 +106,25 @@ outside data, you do not need to define any parameters.
 invocation to be modified or used to return a specific result. 
 We "pass" arguments to a method when we call it. 
 
+
+Chapter 4: control flow
+
+Ruby follows an order of precedence when deciding how to evaluate multiple 
+expressions. The following is a list of operations from highest order of 
+precedence (top) to lowest (bottom).
+
+<=, <, >, >= - Comparison
+==, != - Equality
+&& - Logical AND
+|| - Logical OR
+
+So in this example:
+if x && y || z
+  # do something
+end
+First the x && y statement will be executed. If that statement is true, 
+then the program will execute the # do something code on the next line. 
+If the x && y statement is false, then the z will be evaluated. If the z 
+is true, the code on the next line will be evaluated. If the z is false, 
+then the code will exit the if statement.
 
