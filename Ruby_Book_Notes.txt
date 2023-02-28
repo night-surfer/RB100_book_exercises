@@ -128,3 +128,22 @@ If the x && y statement is false, then the z will be evaluated. If the z
 is true, the code on the next line will be evaluated. If the z is false, 
 then the code will exit the if statement.
 
+Chapter 5 - Loops and Iterators
+
+A while loop is given a parameter that evaluates as either true or false.
+
+The until loop is simply the opposite of the while loop. You can substitute it 
+    in order to phrase the problem in a different way. 
+    
+**As with while loops, until is not a method. Therefore, 
+        until loops do not have their own scope.
+        
+A do/while loop works in a similar way to a while loop; 
+one important difference is that the code within the loop gets executed 
+one time, prior to the conditional check to see if the code should be executed. 
+In a "do/while" loop, the conditional check is placed at the end 
+of the loop as opposed to the beginning.
+
+for loops are used to loop over a collection of elements.
+
+Remember: A block is just some lines of code ready to be executed.
