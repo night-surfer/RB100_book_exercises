@@ -1,11 +1,14 @@
-
+puts "Try to guess what number I am thinking of."
 #this is closer but still not it
-x = ""
-while x != 44 do
-  puts "Try to guess what number I am thinking of."
-  ans = gets.chomp.to_i
+#x = ""
+ans = gets.chomp.to_i
+
+while ans != 44 do
+  #ans = gets.chomp.to_i
   puts "Sorry, but that isn't the number I am thinking of. Guess again."
-  x = gets.chomp.to_i
+  if ans == 44
+  puts "Correct"
+  end 
 end
 puts "You guessed it! Great job."
 

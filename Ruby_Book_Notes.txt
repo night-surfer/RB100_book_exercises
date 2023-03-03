@@ -147,3 +147,14 @@ of the loop as opposed to the beginning.
 for loops are used to loop over a collection of elements.
 
 Remember: A block is just some lines of code ready to be executed.
+
+Chapter 6: Arrays 
+
+-"each" and "map" are important methods to know but can be quite confusing 
+in the beginning. Another way to remember these methods: use each for 
+iteration and map for transformation.
+
+-Arrays are an extremely valuable data set. They can be used to store many 
+different kinds of data and you'll see them very often in the wild. Ruby's array 
+class has lots of built-in methods that can be used to perform many of the daily 
+functions that programmers use. 
