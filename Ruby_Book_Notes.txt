@@ -42,7 +42,7 @@ ex: {:dog => 'barks', :cat => 'meows', :pig => 'oinks'}[:dog]
   would return "barks"
   
 An expression is anything that can be evaluated. 
-a ruby expression always returns a value, even if it an error or nil
+a ruby expression always returns a value, even if its an error or nil
 
 
 Chapter 2: Variables
@@ -158,3 +158,32 @@ iteration and map for transformation.
 different kinds of data and you'll see them very often in the wild. Ruby's array 
 class has lots of built-in methods that can be used to perform many of the daily 
 functions that programmers use. 
+
+.product - returns an array of all combinations of elements from all arrays.
+  ex: [1,2,3].product([4,5])     #=> [[1,4],[1,5],[2,4],[2,5],[3,4],[3,5]]
+  another ex: [1,2].product([3,4],[5,6]) #=> [[1,3,5],[1,3,6],[1,4,5],[1,4,6],[2,3,5],[2,3,6],[2,4,5],[2,4,6]]
+  
+  Chapter 7: Hashes
+  
+  Most commonly, a hash is created using symbols as keys and any data types as values. 
+  All key-value pairs in a hash are surrounded by curly braces {} and comma separated.
+  
+  ex: older_syntax_style = {:name => 'bob}    will => {:name=>'bob}
+  ex: new_syntax_style = {name: 'bob'}        will => {:name=>'bob}
+  
+  Chapter 8: More Stuff 
+  
+--Regex stands for regular expression. A regular expression is a sequence of 
+characters that form pattern matching rules, and is then applied to a string 
+to look for matches.
+
+Remember when working with variables: some operations mutate the address space,
+while others simply make the variable point to a different address space.
+
+Blocks, like parameters, can be passed into a method just like normal variables.
+
+define all your methods before you try to invoke the first one. 
+
+Exception handling is a structure used to handle the possibility 
+of an error occurring in a program. It is a way of handling the error
+by changing the flow of control without exiting the program entirely.
