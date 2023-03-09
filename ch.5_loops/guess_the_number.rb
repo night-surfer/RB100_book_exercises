@@ -13,7 +13,7 @@ while n != 44 do
     puts "I'm sorry but #{n} is too high. Guess lower this time."
   elsif n < 0 
     puts "Nice try, but #{n} is a negative number. Guess again."
-  elsif n < 44
+  else n < 44
     puts "Nope, #{n} is too low. Try a higher number."
   end 
   n = gets.chomp.to_i      # without this here it would go into an infinite loop

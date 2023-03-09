@@ -187,3 +187,10 @@ define all your methods before you try to invoke the first one.
 Exception handling is a structure used to handle the possibility 
 of an error occurring in a program. It is a way of handling the error
 by changing the flow of control without exiting the program entirely.
+
+When looking on https://docs.ruby-lang.org/:
+documentation for what we like to think of as "the ruby language" can be 
+difficult to find until we know where to look. The "control expressions" 
+page is where you will find discussions of most language features that control 
+code flow: conditionals (if, unless, case), basic looping (while, until, for), 
+loop termination (break, next), and several other features of the language.
