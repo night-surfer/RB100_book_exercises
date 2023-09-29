@@ -23,6 +23,30 @@ end
  puts "Wow! You guessed it! Great job."
 #end
 
+# Here is another way to do it that adds an option to quit!
+#puts "give us a number between 1 and 100."
+#ans = gets.chomp.to_i
+#
+#loop do
+#    if ans == 44
+#      puts "Holy shit you guessed it!!!"
+#      break
+#    elsif ans < 0 || ans > 100
+#      puts "that number isnt between 1 and 100!"
+#    elsif ans < 44
+#      puts "Thats too low."
+#    else 
+#      puts "Just like your mom, thats Too high!"
+#    end
+#  puts "why dont you give it another go? If not, press 'Q'"
+#  respond = gets.chomp.upcase
+#  if respond == "Q"
+#    puts "Q is for Quiter!"
+#    break
+#  end
+#  ans = respond.to_i
+#end
+
 
 
  
